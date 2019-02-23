@@ -1,0 +1,19 @@
+version: '3'
+services:            
+    vehicles-db:
+        image: postgres:11
+        ports:
+            - 5432:5432
+        restart: always
+    
+    event-queue:
+        image: "rabbitmq:3.7-management"
+        ports:
+            - 15672:15672
+            - 5672:5672
+
+    adminer:
+        image: adminer:4.7
+        restart: always
+        ports:
+            - 8080:8080

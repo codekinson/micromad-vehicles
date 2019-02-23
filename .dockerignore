@@ -1,0 +1,7 @@
+
+obj/
+bin/
+*[Dd]ocker*
+.DS_Store
+.idea/
+*.sln*
